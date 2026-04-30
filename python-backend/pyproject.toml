@@ -1,0 +1,41 @@
+[project]
+name = "ai-conversation-python-backend"
+version = "0.1.0"
+description = "Python backend for AI Conversation UI - CRUD + SSE + WebSocket"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.34.0",
+    "pydantic>=2.10.0",
+    "pydantic-settings>=2.6.0",
+    "sqlalchemy[asyncio]>=2.0.36",
+    "aiosqlite>=0.20.0",
+    "pydub>=0.25.1",
+    "python-multipart>=0.0.18",
+    "orjson>=3.10.0",
+    "modelscope>=1.36.0",
+    "numpy>=1.24.0",
+    "onnxruntime>=1.17.0",
+    "soundfile>=0.12.0",
+    "kaldi-native-fbank>=1.0.0",
+    "kaldiio>=2.17.0",
+    "tokenizers>=0.19.0",
+    "llama-cpp-python>=0.2.0",
+    "misaki[zh]>=1.0.0",
+    "gguf>=0.6.0",
+    "transformers>=4.40.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.24.0",
+    "httpx>=0.28.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

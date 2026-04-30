@@ -1,0 +1,64 @@
+# Python —— 字节码缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python —— 构建产物与包信息
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Python —— 虚拟环境
+.venv/
+venv/
+
+# Python —— 测试缓存
+.pytest_cache/
+.ruff_cache/
+
+# Node —— 依赖与构建产物
+node_modules/
+typescript-frontend/node_modules/
+typescript-frontend/dist/
+typescript-frontend/.vite/
+typescript-frontend/tasks/
+
+# 模型文件（大文件，不纳入版本控制）
+/models/
+*.safetensors
+*.bin
+*.gguf
+*.wav
+
+# IDE 与编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 环境变量与密钥
+.env
+.env.local
+
+# 日志文件
+*.log
+logs/
+
+# 任务 / 计划文件
+/tasks/
+
+# AI 辅助工具
+.claude/
+.omc/
+.codebuddy/
+AGENTS.md
+
+# 测试结果
+/output/custom/
+/output/design/
+
+**/inference/bin/*
+!**/inference/bin/*.txt
